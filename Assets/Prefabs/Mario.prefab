@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4864001415006283478}
   - component: {fileID: 8161536786647240793}
   - component: {fileID: 947261875434585799}
+  - component: {fileID: 7884539179287893704}
   m_Layer: 3
   m_Name: Mario
   m_TagString: Player
@@ -95,7 +96,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.04}
+  m_Offset: {x: 0, y: 0.18}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
 --- !u!114 &947261875434585799
@@ -113,6 +114,18 @@ MonoBehaviour:
   moveSpeed: 8
   maxJumpHeight: 5
   maxJumpTime: 1
+--- !u!114 &7884539179287893704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497578725634787386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbe217e867cf0bd4890cdd1ec5a61347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1444332228460327085
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +137,7 @@ GameObject:
   - component: {fileID: 2845393836448028681}
   - component: {fileID: 3256990549435115894}
   - component: {fileID: 4212865695609721265}
+  - component: {fileID: 7329238426849579583}
   m_Layer: 3
   m_Name: Big
   m_TagString: Untagged
@@ -140,7 +154,7 @@ Transform:
   m_GameObject: {fileID: 1444332228460327085}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.43, z: 0}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -205,7 +219,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444332228460327085}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d80c77b6836a5d84fadb57d999f750ed, type: 3}
   m_Name: 
@@ -213,7 +227,25 @@ MonoBehaviour:
   idle: {fileID: 21300000, guid: 17d0f5a19508c994e86dbee100fa8269, type: 3}
   jump: {fileID: 21300000, guid: 5772f9c35b012a14aac1cbcef7adfcea, type: 3}
   slide: {fileID: 21300000, guid: bfb02f37424e1504cb18192b8e445d43, type: 3}
-  run: {fileID: 21300000, guid: 70a814181cd2645409e832dd63d92fb0, type: 3}
+  run: {fileID: 7329238426849579583}
+--- !u!114 &7329238426849579583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444332228460327085}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbfa358f50f2bd4d9118c34354601be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 70a814181cd2645409e832dd63d92fb0, type: 3}
+  - {fileID: 21300000, guid: c2e5aa3daa0fa16469ff9173a4c623fb, type: 3}
+  - {fileID: 21300000, guid: bd69c9ac1c7046d41862f618d99ca856, type: 3}
+  - {fileID: 21300000, guid: c2e5aa3daa0fa16469ff9173a4c623fb, type: 3}
+  framerate: 0.16666667
 --- !u!1 &9014144003704037781
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +257,7 @@ GameObject:
   - component: {fileID: 3675667505553858750}
   - component: {fileID: 1493647014178519168}
   - component: {fileID: 1571148636241425574}
+  - component: {fileID: 1507308349876092714}
   m_Layer: 3
   m_Name: Small
   m_TagString: Untagged
@@ -314,4 +347,22 @@ MonoBehaviour:
   idle: {fileID: 21300000, guid: 316669850fc22b947a5ffd08a201559e, type: 3}
   jump: {fileID: 21300000, guid: fe0645aacf16c3c4cab67a8ac2e3bc3a, type: 3}
   slide: {fileID: 21300000, guid: 98014fa15d2f2f84495aa2512e65cfba, type: 3}
-  run: {fileID: 21300000, guid: f8683836d7ce2e84ca96fcced8e51144, type: 3}
+  run: {fileID: 1507308349876092714}
+--- !u!114 &1507308349876092714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014144003704037781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbfa358f50f2bd4d9118c34354601be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: f8683836d7ce2e84ca96fcced8e51144, type: 3}
+  - {fileID: 21300000, guid: 35672984aa1fd894da6716da8832d93a, type: 3}
+  - {fileID: 21300000, guid: d819e2f75eeea5242b6de17737bb2268, type: 3}
+  - {fileID: 21300000, guid: 35672984aa1fd894da6716da8832d93a, type: 3}
+  framerate: 0.16666667
