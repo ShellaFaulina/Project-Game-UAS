@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class AnimatedSprite : MonoBehaviour
 {
     public Sprite[] sprites;
@@ -29,7 +28,7 @@ public class AnimatedSprite : MonoBehaviour
     {
         frame++;
 
-        if (frame >= sprites.Length){
+        if (frame >= sprites.Length) {
             frame = 0;
         }
 
@@ -37,4 +36,5 @@ public class AnimatedSprite : MonoBehaviour
             spriteRenderer.sprite = sprites[frame];
         }
     }
+
 }

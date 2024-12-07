@@ -1,22 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class PlayerSpriteRenderer : MonoBehaviour
 {
-   private SpriteRenderer spriteRenderer;
-   private PlayerMovement movement;
+    private PlayerMovement movement;
+    public SpriteRenderer spriteRenderer { get; private set; }
+    public Sprite idle;
+    public Sprite jump;
+    public Sprite slide;
+    public AnimatedSprite run;
 
-   public Sprite idle;
-   public Sprite jump;
-   public Sprite slide;
-   public AnimatedSprite run;
-
-   private void Awake()
-   {
-        spriteRenderer= GetComponent<SpriteRenderer>();
+    private void Awake()
+    {
         movement = GetComponentInParent<PlayerMovement>();
-   }
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    private void LateUpdate()
+    {
+        run.enabled = movement.running;
+
+        if (movement.jumping) {
+            spriteRenderer.sprite = jump;
+        } else if (movement.sliding) {
+            spriteRenderer.sprite = slide;
+        } else if (!movement.running) {
+            spriteRenderer.sprite = idle;
+        }
+    }
 
     private void OnEnable()
     {
@@ -26,19 +37,7 @@ public class PlayerSpriteRenderer : MonoBehaviour
     private void OnDisable()
     {
         spriteRenderer.enabled = false;
+        run.enabled = false;
     }
 
-   private void LateUpdate()
-   {
-
-    run.enabled = movement.running;
-
-    if (movement.jumping) {
-        spriteRenderer.sprite = jump;
-    } else if (movement.sliding) {
-        spriteRenderer.sprite = slide;
-    } else if (!movement.running) {
-        spriteRenderer.sprite = idle;
-    }
-   }
 }
