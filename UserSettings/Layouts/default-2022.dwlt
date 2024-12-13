@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1706.6667
     height: 869.3334
   m_ShowMode: 4
+<<<<<<< Updated upstream
   m_Title: Scene
+=======
+  m_Title: Game
+>>>>>>> Stashed changes
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -324,23 +328,39 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< Updated upstream
     - Assets/Prefabs
+=======
+    - Assets/Sprites
+>>>>>>> Stashed changes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
+<<<<<<< Updated upstream
   m_StartGridSize: 75
   m_LastFolders:
   - Assets/Prefabs
   m_LastFoldersGridSize: 75
+=======
+  m_StartGridSize: 96
+  m_LastFolders:
+  - Assets/Sprites
+  m_LastFoldersGridSize: 96
+>>>>>>> Stashed changes
   m_LastProjectPath: C:\Users\NITRO 5\OneDrive\Documents\GitHub\Project-Game-UAS
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
     m_SelectedIDs: 86420000
     m_LastClickedID: 17030
+=======
+    m_SelectedIDs: 8c420000
+    m_LastClickedID: 17036
+>>>>>>> Stashed changes
     m_ExpandedIDs: 000000007e42000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -421,8 +441,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
+<<<<<<< Updated upstream
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 75
+=======
+    m_ScrollPosition: {x: 0, y: 337.0006}
+    m_GridSize: 96
+>>>>>>> Stashed changes
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &13
@@ -511,7 +536,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< Updated upstream
       m_ExpandedIDs: 40fbffff
+=======
+      m_ExpandedIDs: 02fbffff40fbffff
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -865,9 +894,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< Updated upstream
     m_Target: {x: -15.657058, y: 3.6364074, z: -0.008644709}
     speed: 2
     m_Value: {x: -15.657058, y: 3.6364074, z: -0.008644709}
+=======
+    m_Target: {x: 6.1946836, y: 0.34661132, z: 0}
+    speed: 2
+    m_Value: {x: 6.1946836, y: 0.34661132, z: 0}
+>>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -917,9 +952,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< Updated upstream
     m_Target: 4.9449086
     speed: 2
     m_Value: 4.9449086
+=======
+    m_Target: 10.175463
+    speed: 2
+    m_Value: 10.175463
+>>>>>>> Stashed changes
   m_Ortho:
     m_Target: 1
     speed: 2
