@@ -26,10 +26,15 @@ public class Koopa : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        
+    }
+
+
     private void EnterShell()
         {
             shelled = true;
-
 
             //GetComponent<Collider2D>().enabled = false;
             GetComponent<EntityMovement>().enabled = false;
